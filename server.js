@@ -5,7 +5,7 @@ const path = require('path');
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
-
+app.use('/src',express.static('src'));
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'src/index.html'));
 });
