@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Email</title>
+    <link rel="stylesheet" href="../src/tail.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <form action="/send-email" method="post" class="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
+        <div class="mb-4">
+            <label for="email" class="block text-sm font-medium text-gray-700">Your Email:</label>
+            <input type="email" name="email" required class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400">
+        </div>
+
+        <div class="mb-4">
+            <label for="password" class="block text-sm font-medium text-gray-700">App Password:</label>
+            <input type="password" name="password" required class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400">
+        </div>
+
+        <div class="mb-4">
+            <label for="to" class="block text-sm font-medium text-gray-700">To:</label>
+            <input type="email" name="to" required class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400">
+        </div>
+
+        <div class="mb-4">
+            <label for="subject" class="block text-sm font-medium text-gray-700">Subject:</label>
+            <input type="text" name="subject" required class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400">
+        </div>
+
+        <div class="mb-4">
+            <label for="text" class="block text-sm font-medium text-gray-700">Message:</label>
+            <textarea name="text" rows="5" cols="33" required class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400"></textarea>
+        </div>
+
+        <button type="submit" class="bg-indigo-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-400 w-full">Send Email</button>
+    </form>
+</body>
+
+<!-- <body>
+    <h2>smtp</h2>
+    <form action="/send-email" method="post">
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" required>
+
+        <label for="password">App Password:</label>
+        <input type="password" name="password" required>
+
+        <label for="to">To:</label>
+        <input type="email" name="to" required>
+
+        <label for="subject">Subject:</label>
+        <input type="text" name="subject" required>
+
+        <label for="text">Message:</label>
+        <textarea name="text" rows="5" cols="33" required></textarea>
+
+        <button type="submit" class="bg-indigo-100">Send Email</button>
+    </form>
+</body> -->
+</html>
